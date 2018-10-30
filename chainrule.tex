@@ -38,7 +38,21 @@ in words: The derivative of a composition is the derivative of the outside, with
 \begin{example}
 Find the derivative of $y=(4x^3+15x)^2$.
 
-This is the same one we did before by multiplying out.  This time, let’s use the Chain Rule:  The inside function is what appears inside the parentheses: $g(x)=\answer[given]{4x^3+15x}$.  In our mind, we can replace the inside function with an ``$x$'' and read off the outside function $f(x)=\answer[given]{x^2}$.
+This is the same one we did before by multiplying out.  This time, let's use the Chain Rule:  The inside function is what appears inside the parentheses: $g(x)=\answer[given]{4x^3+15x}$.  We imagine replacing the inside function with an ``$x$'' to read off the outside function $f(x)=\answer[given]{x^2}$.
 
+To use the chain rule, we need the derivatives of both the inside and outside functions.  
+\[
+\boxed{
+\begin{array}{ll}
+f(x)=x^2 & f^{\prime}(x)=2x \\
+g(x)= 4x^3+15x& g^{\prime}(x)=12x^2+15 
+\end{array}
+}
+\]
+We use the chain rule:
+\[
+ y^{\prime}=f^{\prime}(g(x))\cdot g^{\prime}(x) =2(4x^3+15x)\cdot(12x^2+15)
+\]
+If you multiply this out, you get the same answer we got before.  Hurray!  Algebra works!
 \end{example}
 \end{document}
